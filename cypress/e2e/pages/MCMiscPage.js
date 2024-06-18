@@ -14,7 +14,6 @@ export class MCMiscPage{
     }
     selectLoan(term){
         cy.get(this.loan).select(term)
-        //with more time I would make an
     }
     checkPayment(monthly){
         cy.get(this.payment).should((paymenttxt) => {
